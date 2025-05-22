@@ -1,0 +1,42 @@
+
+<!--mediante un html en visual code se le agregue
+la validacon para la entrada de informacion y con js realice la funcionalidad usando DOM de un carrito de compra de un e-comercw para la compra de libros-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Libros</title>
+</head>
+<body>
+    <h1>Tienda de Libros</h1>
+    
+    <div id="formulario">
+        <h2>Agregar Libro</h2>
+        <label for="tituloLibro">Título:</label>
+        <input type="text" id="tituloLibro" required>
+        <label for="precioLibro">Precio:</label>
+        <input type="number" id="precioLibro" min="0" step="0.01" required>
+        <button id="agregarLibroBoton">Agregar Libro</button>
+    </div>
+    
+    <div id="librosDisponibles">
+        <h2>Libros Disponibles</h2>
+        <ul id="listadeLibros">
+            <!-- Libros disponibles se agregaran aqi -->
+        </ul>
+    </div>
+    
+    <div id="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="listaCarrito">
+            <!-- Items del carrito se agregaran aqui -->
+        </ul>
+        <p>Total: $<span id="totalCarrito">0.00</span></p>
+        <button id="vaciarCarritoBoton">Vaciar Carrito</button>
+        <button id="comprarBoton">Comprar</button>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
